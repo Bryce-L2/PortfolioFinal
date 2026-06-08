@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryce Lombardo — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;600;700;900&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">BL <span>//</span> Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-main">
+
+      <div class="hero-left">
+        <div>
+          <div class="hero-kicker">
+            <div class="kicker-rule"></div>
+            <span class="kicker-text">CIS Portfolio — Morris County School of Technology</span>
+          </div>
+          <h1 class="hero-name">
+            <span class="first">Bryce</span>
+            <span class="last">Lombardo</span>
+          </h1>
+          <p class="hero-tagline">
+            CIS student, entrepreneur, and active trader building finance software that comes from real market experience.
+          </p>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-right-block">
+          <div class="hero-right-label">Location</div>
+          <p class="hero-right-body">Morris County, NJ</p>
+        </div>
+        <div class="hero-vertical-rule"></div>
+        <div class="hero-right-block">
+          <div class="hero-right-label">Current Focus</div>
+          <ul class="hero-focus-list">
+            <li>Finance software</li>
+            <li>Embedded hardware</li>
+            <li>Long term equities</li>
+          </ul>
+        </div>
+        <div class="hero-vertical-rule"></div>
+        <div class="hero-right-block">
+          <div class="hero-right-label">Status</div>
+          <p class="hero-right-body">CIS Program MCST 2027</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-strip">
+      <div class="strip-item">
+        <div class="strip-num">01</div>
+        <div class="strip-label">Market Gene<br>Java CLI Tool</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-num">02</div>
+        <div class="strip-label">Stock Simulator<br>GUI Application</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-num">03</div>
+        <div class="strip-label">Bullish or Bearish AI<br>Python / ML</div>
+      </div>
+      <div class="strip-item" style="border-right:none;">
+        <div class="strip-num">04</div>
+        <div class="strip-label">OBD-II Visualizer<br>C++ / Arduino</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Biography</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="about-grid" style="grid-template-columns: 1fr; max-width: 680px;">
+      <div>
+        <p class="bio-text reveal">
+          I'm a Computer and Information Sciences student at Morris County School of Technology, graduating in 2027, and I'm working toward a career in financial investing, the software engineering behind modern trading and investing platforms. What draws me to it is the overlap between markets and software, taking a real problem I've hit as a trader and engineering an actual tool to solve it.</p>
+        <p class="bio-text reveal">
+          Outside the classroom, I've run my own landscaping business for six years and work as a Clinic Coordinator at New Jersey Doctors of Physical Therapy, managing scheduling and patient communication. I actively trade long term equity positions and day trade index futures, which is where most of my project ideas come from. I focus on writing clean, maintainable code and on shipping projects that hold up in the real world, not just in a demo.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Project Showcase</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card reveal-left">
+      <div class="project-card-inner">
+        <div class="project-info">
+          <div class="project-header">
+            <span class="project-type-tag">CLI Tool — Java</span>
+            <div class="project-number">01</div>
+          </div>
+          <h3 class="project-title">Market Gene</h3>
+          <p class="project-desc">
+            Investors often struggle to narrow down stock picks or validate trade setups without a structured framework. Market Gene solves this by asking them a couple of questions, then returning stock recommendations. A separate futures module applies ICT confluence analysis to ES futures setups, scoring trade strength and projecting potential profit per contract.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">ICT Concepts</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="detail-label">Design Thinking</div>
+          <p class="detail-text">I structured the program around two completely different market workflows: stocks and futures, both accessible from a persistent main menu loop. The futures module accumulates confluence points across four conditions and maps the total to a risk tier, giving the user a meaningful, graduated output rather than a simple buy or sell.</p>
+          <div class="detail-label">Challenge Overcome</div>
+          <p class="detail-text">Handling invalid user inputs without crashing the program was the core challenge. I added input validation at every prompt and a default case in each switch statement.</p>
+          <div class="detail-label">Code / Demo</div>
+          <a href="https://github.com/Bryce-L2/Market-Gene/tree/main" target="_blank" rel="noopener" class="detail-link">→ View on GitHub</a>
+          <div class="screenshot-box">
+            <img src="marketgene.png" alt="Market Gene demo" class="screenshot-img"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card reveal-right">
+      <div class="project-card-inner">
+        <div class="project-info">
+          <div class="project-header">
+            <span class="project-type-tag">GUI Application — Java</span>
+            <div class="project-number">02</div>
+          </div>
+          <h3 class="project-title">Stock Market Simulator</h3>
+          <p class="project-desc">
+            New investors have no way to practice trading before committing real capital. This paper trading simulator gives users $10,000 in virtual cash and a full trading interface. Search any ticker, and execute buys and sells at real 15 minute delayed prices pulled live from the Alpha Vantage API. A portfolio tracker displays current holdings, live value, and profit/loss in real time. Real chart data coming soon.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Java Swing</span>
+            <span class="tech-badge">Maven</span>
+            <span class="tech-badge">Alpha Vantage API</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="detail-label">Design Thinking</div>
+          <p class="detail-text">I modeled the simulator around three core data structures: a cash balance, a holdings map, and a transaction history. Every trade routes through dedicated methods that update all three atomically, mirroring how a real brokerage account tracks positions.</p>
+          <div class="detail-label">Challenge Overcome</div>
+          <p class="detail-text">The Alpha Vantage free tier allows only 25 API calls per day, and each stock search consumes two calls, one for the current price and one for the chart history. I had to carefully design the request flow to cache responses where possible and surface a clear error state when the daily limit was hit, so the app never silently fails.</p>
+          <div class="detail-label">Code / Demo</div>
+          <a href="https://github.com/Bryce-L2/Stock_Java_SwingGUI" target="_blank" rel="noopener" class="detail-link">→ View on GitHub</a>
+          <div class="screenshot-box">
+            <img src="simulator.png" alt="Stock Market Simulator demo" class="screenshot-img"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card reveal-left">
+      <div class="project-card-inner">
+        <div class="project-info">
+          <div class="project-header">
+            <span class="project-type-tag">AI / Machine Learning — Python</span>
+            <div class="project-number">03</div>
+          </div>
+          <h3 class="project-title">Bullish or Bearish AI</h3>
+          <p class="project-desc">
+            Reading candlestick charts to call the next move takes years to learn, and everyone reads them a little differently. This project trains a CNN to do it instead. It looks at a 50-candle chart image of ES or NQ futures and predicts whether the next day will be bullish or bearish. Built in Python with PyTorch across three scripts, and trained to about 91% accuracy. I also tested it on a real TradingView screenshot it had never seen and it called it right.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">CNN</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">Pillow</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="detail-label">Design Thinking</div>
+          <p class="detail-text">I split the system into three scripts so I could test each part on its own: data.py makes and labels the candlestick chart images, train.py builds and trains the CNN on that dataset, and predict.py loads the trained model to read a new chart. I treated the chart as an image instead of a list of numbers, so the model learns the visual patterns the same way I do when I look at a chart, rather than me hand-coding a bunch of indicators.</p>
+          <div class="detail-label">Challenge Overcome</div>
+          <p class="detail-text">My first model looked accurate in training but fell apart on real charts. It had learned the quirks of how I was generating the images instead of the actual price action. I regenerated the whole dataset with cleaner, more consistent charts and retrained, which got it to around 91% and made it actually work on a real TradingView screenshot.</p>
+          <div class="detail-label">Code / Demo</div>
+          <a href="https://github.com/Bryce-L2/StockAIProject" target="_blank" rel="noopener" class="detail-link">→ View on GitHub</a>
+          <div class="screenshot-box">
+            <img src="bullbear.png" alt="Bullish or Bearish AI demo" class="screenshot-img"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card reveal-right">
+      <div class="project-card-inner">
+        <div class="project-info">
+          <div class="project-header">
+            <span class="project-type-tag">Embedded Hardware — C++ / Arduino</span>
+            <div class="project-number">04</div>
+          </div>
+          <h3 class="project-title">OBD-II RPM LED Visualizer</h3>
+          <p class="project-desc">
+            Factory dashboards give drivers almost no feedback on engine behavior. This project reads live RPM data from a vehicle's OBD-II port via a Freematics UART adapter and maps it onto a NeoPixel strip with bouncy physics. The LEDs climb purple, fade to pink, then white as RPM rises, and the full strip strobes white at redline. Built and tested on a 2017 Ford Fusion Energi, but compatible with any OBD-II vehicle (1996+).
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">C++ / Arduino</span>
+            <span class="tech-badge">OBD-II UART (Freematics)</span>
+            <span class="tech-badge">Adafruit NeoPixel</span>
+            <span class="tech-badge">Hardware Serial</span>
+            <span class="tech-badge">OBD-II / PID_RPM</span>
+            <span class="tech-badge">Arduino Uno R3</span>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="detail-label">Design Thinking</div>
+          <p class="detail-text">I designed the system in three layers: communication using the freematics to talk to the Arduino to get real data from the car's ECU, physics, a bounce algorithm that rises fast and falls naturally for a realistic feel, and output using NeoPixel color gradient mapped across the RPM range with a redline strobe effect. Separating the layers made it easy to test and tune each one independently.</p>
+          <div class="detail-label">Challenge Overcome</div>
+          <p class="detail-text">The Freematics adapter uses hardware serial on pins D0/D1, which conflict with the Arduino's USB upload port. Every sketch upload requires unplugging D0 and D1, uploading, then reconnecting. I also traced an early wiring issue to the VCC pin: the adapter is powered by the OBD-II port directly, and connecting its VCC to the Arduino's 5V rail caused conflicts that corrupted serial communication.</p>
+          <div class="detail-label">Code / Demo</div>
+          <a href="https://github.com/Bryce-L2/OBD-II-RPM-visualizer" target="_blank" rel="noopener" class="detail-link">→ View on GitHub</a>
+          <div class="screenshot-box">
+            <img src="obd2.png" alt="OBD-II RPM LED Visualizer demo" class="screenshot-img"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Resume &amp; Contact</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <div class="contact-card-title">Resume</div>
+        <p>Download my current technical resume to review my skills, project history, and academic background.</p>
+        <a href="BryceLombardoResume.pdf" class="btn-primary" download style="font-size:0.78rem; display:inline-block;">
+          Download Resume (PDF)
+        </a>
+
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-title" style="color:var(--ink);">Contact</div>
+        <div class="contact-item">
+          <span class="contact-icon">Email</span>
+          <span class="contact-val"><a href="mailto:Bryce.lombardo@mcvts.org">Bryce.lombardo@mcvts.org</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">GitHub</span>
+          <span class="contact-val"><a href="https://github.com/Bryce-L2" target="_blank">github.com/Bryce-L2</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">LinkedIn</span>
+          <span class="contact-val">
+            <a href="https://www.linkedin.com/in/bryce-lombardo-27453a379" target="_blank">linkedin.com/in/bryce-lombardo-27453a379</a>
+          </span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">School</span>
+          <span class="contact-val" style="color:var(--ink-light);">
+            Morris County School of Technology<br>
+            Computer and Information Sciences
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2027 Bryce Lombardo — Morris County School of Technology</span>
+    <span>Built with HTML, CSS &amp; JS </span>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
